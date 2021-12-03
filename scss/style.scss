@@ -27,7 +27,7 @@ $dark-shadow:0 0 0 100vw rgba(0,0,0,.5);
 }
 
 html {
-  font-size: 6.5%;
+  font-size: 62.5%;
   overflow-x: hidden;
 
 
@@ -61,4 +61,17 @@ html {
     color: $green;
     font-weight: bolder;
   }
+
+  i {
+    padding-right: .3rem;
+  }
+}
+
+.search-form {
+  height: 5rem;
+  width: 50rem;
+  border-radius: 5rem;
+  background: $white;
+  overflow: hidden;
+  display: flex;
 }
