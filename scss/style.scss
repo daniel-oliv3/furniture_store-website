@@ -44,6 +44,20 @@ html {
   }
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  background: $green;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background: #316868;
+  }
+}
+
 .header {
   padding: 2rem 9%;
   position: sticky;
@@ -113,6 +127,13 @@ html {
   display: none;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
 #closer {
   position: fixed;
   top: 1.5rem;
@@ -121,6 +142,8 @@ html {
   cursor: pointer;
   z-index: 10000;
   color: $green;
+  animation: rotate .4s linear .4s backwards;
+  display: none;
 
   &:hover {
     color: $light-color;
@@ -140,6 +163,11 @@ html {
   justify-content: center;
   flex-flow: column;
 
+  &.active {
+    right: 0;
+    box-shadow: $box-shadow;
+    transition: .4s linear;
+  }
 
   a {
     margin: 1rem 0;
@@ -149,5 +177,94 @@ html {
     &:hover {
       color: $light-color;
     }
+  }
+}
+
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 35rem;
+  height: 100vh;
+  background: $white;
+  padding: 2rem;
+  padding-top: 8rem;
+  overflow-y: scroll;
+
+  &.active {
+    right: 0;
+    box-shadow: $dark-shadow;
+    transition: .4s linear;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $green;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+
+    .fa-times {
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: $light-color;
+      cursor: pointer;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    img {
+      height: 8rem;
+    }
+
+    .content {
+      h3 {
+        color: $green;
+        font-size: 1.8rem;
+        padding-bottom: .5rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+        color: $light-color;
+
+        &.multipy {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+
+  .total {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+
+    span {
+      color: $green;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }

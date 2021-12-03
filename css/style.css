@@ -25,6 +25,19 @@ html::-webkit-scrollbar-thumb {
   background: #244d4d;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  background: #244d4d;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #316868;
+}
+
 .header {
   padding: 2rem 9%;
   position: sticky;
@@ -86,6 +99,12 @@ html::-webkit-scrollbar-thumb {
   display: none;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 #closer {
   position: fixed;
   top: 1.5rem;
@@ -94,6 +113,8 @@ html::-webkit-scrollbar-thumb {
   cursor: pointer;
   z-index: 10000;
   color: #244d4d;
+  animation: rotate 0.4s linear 0.4s backwards;
+  display: none;
 }
 #closer:hover {
   color: #779;
@@ -112,6 +133,11 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   flex-flow: column;
 }
+.navbar.active {
+  right: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.4s linear;
+}
 .navbar a {
   margin: 1rem 0;
   font-size: 2.5rem;
@@ -119,6 +145,79 @@ html::-webkit-scrollbar-thumb {
 }
 .navbar a:hover {
   color: #779;
+}
+
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 35rem;
+  height: 100vh;
+  background: #fff;
+  padding: 2rem;
+  padding-top: 8rem;
+  overflow-y: scroll;
+}
+.shopping-cart.active {
+  right: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  transition: 0.4s linear;
+}
+.shopping-cart::-webkit-scrollbar {
+  width: 1rem;
+}
+.shopping-cart::-webkit-scrollbar-track {
+  background: #fff;
+}
+.shopping-cart::-webkit-scrollbar-thumb {
+  background: #244d4d;
+}
+.shopping-cart .box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.shopping-cart .box .fa-times {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #779;
+  cursor: pointer;
+}
+.shopping-cart .box .fa-times:hover {
+  color: #244d4d;
+}
+.shopping-cart .box img {
+  height: 8rem;
+}
+.shopping-cart .box .content h3 {
+  color: #244d4d;
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+}
+.shopping-cart .box .content span {
+  font-size: 1.5rem;
+  color: #779;
+}
+.shopping-cart .box .content span.multipy {
+  margin: 0 1rem;
+}
+.shopping-cart .total {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.shopping-cart .total span {
+  color: #244d4d;
+}
+.shopping-cart .btn {
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
