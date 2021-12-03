@@ -60,12 +60,11 @@ html {
     font-size: 2.5rem;
     color: $green;
     font-weight: bolder;
-  }
 
-  i {
-    padding-right: .3rem;
+    i {
+      padding-right: .3rem;
+    }
   }
-}
 
 .search-form {
   height: 5rem;
@@ -74,4 +73,27 @@ html {
   background: $white;
   overflow: hidden;
   display: flex;
-}
+  align-items: center;
+  border: $border;
+
+  input {
+      height: 100%;
+      width: 100%;
+      padding: 0 1.2rem;
+      font-size: 1.6rem;
+      color: $green;
+      text-transform: none;
+    }
+
+    label {
+      font-size: 2.5rem;
+      padding-right: 1.7rem;
+      cursor: pointer;
+      color: $green;
+
+      &:hover {
+        color: $light-color;
+      }
+    }
+  }
+} 
