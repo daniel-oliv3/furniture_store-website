@@ -96,4 +96,58 @@ html {
       }
     }
   }
+
+  .icons div {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: $green;
+
+    &:hover {
+      color: $light-color;
+    }
+  }
+}
+
+#search-btn {
+  display: none;
+}
+
+#closer {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 5rem;
+  cursor: pointer;
+  z-index: 10000;
+  color: $green;
+
+  &:hover {
+    color: $light-color;
+  }
 } 
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 35rem;
+  height: 100vh;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+
+
+  a {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    color: $green;
+
+    &:hover {
+      color: $light-color;
+    }
+  }
+}
