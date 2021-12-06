@@ -350,6 +350,69 @@ section {
 }
 
 
+.footer {
+  background-color: $light-bg;
+
+  .box-container {
+    @include grid(25rem);
+
+    .box {
+      h3 {
+        font-size: 2.2rem;
+        color: $green;
+        padding: 1rem 0;
+      }
+
+      p {
+        font-size: 1.6rem;
+        color: $light-color;
+        padding-bottom: 1rem;
+      }
+
+      a {
+        font-size: 1.4rem;
+        color: $light-color;
+        padding: 1rem 0;
+        display: block;
+
+        &:hover {
+          color: $green;
+
+          i {
+            padding-right: 2rem;
+          }
+        }
+
+        i {
+          padding-right: .5rem;
+          color: $green;
+        }
+      }
+
+      form input[type="email"]{
+        width: 100%;
+        padding: 1rem 1.2rem;
+        font-size: 1.6rem;
+        color: $green;
+        text-transform: none;
+        margin: .7rem 0;
+        border: $border;
+      }
+    }
+  }
+}
+
+.credit {
+  text-align: center;
+  font-size: 2rem;
+  color: $white;
+  background: $green;
+}
+
+
+
+
+
 //Media Queries Responsividade
 @media (max-width:991px){
 

@@ -288,6 +288,57 @@ section {
   text-decoration: underline;
 }
 
+.footer {
+  background-color: #f6fbf6;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #244d4d;
+  padding: 1rem 0;
+}
+.footer .box-container .box p {
+  font-size: 1.6rem;
+  color: #779;
+  padding-bottom: 1rem;
+}
+.footer .box-container .box a {
+  font-size: 1.4rem;
+  color: #779;
+  padding: 1rem 0;
+  display: block;
+}
+.footer .box-container .box a:hover {
+  color: #244d4d;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: #244d4d;
+}
+.footer .box-container .box form input[type=email] {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: #244d4d;
+  text-transform: none;
+  margin: 0.7rem 0;
+  border: 0.1rem solid #244d4d;
+}
+
+.credit {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background: #244d4d;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
