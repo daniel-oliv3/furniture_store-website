@@ -268,3 +268,79 @@ html {
     text-align: center;
   }
 }
+
+
+.login-form {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 35rem;
+  height: 100vh;
+  background: $white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &.active {
+    right: 0;
+    box-shadow: $dark-shadow;
+    transition: .4s linear;
+  }
+
+  form {
+    padding: 1.7rem;
+    border: $border;
+
+    h3{
+      font-size: 2.2rem;
+      padding-bottom: 1rem;
+      color: $green;
+    }
+
+    .box {
+      width: 100%;
+      text-transform: none;
+      font-size: 1.5rem;
+      color: $green;
+      padding: 1rem 1.2rem;
+      border: $border;
+      margin: .7rem 0;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+
+      label {
+        padding: 1rem 0;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: $light-color;
+      }
+    }
+
+    .btn {
+      margin: 1rem 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    p {
+      padding-top: 1rem;
+      font-size: 1.4rem;
+      color: $light-color;
+
+      a {
+        color: $green;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+     }
+  }
+}

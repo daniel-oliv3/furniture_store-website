@@ -220,4 +220,68 @@ html::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+.login-form {
+  position: fixed;
+  top: 0;
+  right: -101%;
+  z-index: 1000;
+  width: 35rem;
+  height: 100vh;
+  background: #fff;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form.active {
+  right: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  transition: 0.4s linear;
+}
+.login-form form {
+  padding: 1.7rem;
+  border: 0.1rem solid #244d4d;
+}
+.login-form form h3 {
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+  color: #244d4d;
+}
+.login-form form .box {
+  width: 100%;
+  text-transform: none;
+  font-size: 1.5rem;
+  color: #244d4d;
+  padding: 1rem 1.2rem;
+  border: 0.1rem solid #244d4d;
+  margin: 0.7rem 0;
+}
+.login-form form .remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.login-form form .remember label {
+  padding: 1rem 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #779;
+}
+.login-form form .btn {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+.login-form form p {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  color: #779;
+}
+.login-form form p a {
+  color: #244d4d;
+}
+.login-form form p a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

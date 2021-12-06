@@ -4,6 +4,7 @@ closer.onclick = () => {
     closer.style.display = 'none';
     navbar.classList.remove('active');
     cart.classList.remove('active');
+    loginForm.classList.remove('active');
 }
 
 let navbar = document.querySelector('.navbar');
@@ -18,4 +19,11 @@ let cart = document.querySelector('.shopping-cart');
 document.querySelector('#cart-btn').onclick = () => {
     closer.style.display = 'block';
     cart.classList.toggle('active');
+}
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () => {
+    closer.style.display = 'block';
+    loginForm.classList.toggle('active');
 }
