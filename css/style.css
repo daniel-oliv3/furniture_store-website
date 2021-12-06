@@ -25,6 +25,10 @@ html::-webkit-scrollbar-thumb {
   background: #244d4d;
 }
 
+section {
+  padding: 3rem 9%;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -291,6 +295,10 @@ html::-webkit-scrollbar-thumb {
 
   .header {
     padding: 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
   }
 }
 @media (max-width: 768px) {
