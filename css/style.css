@@ -345,6 +345,12 @@ section {
   background: #244d4d;
   color: #fff;
 }
+.home #slide-next {
+  right: 2rem;
+}
+.home #slide-prev {
+  left: 2rem;
+}
 
 .footer {
   background-color: #f6fbf6;

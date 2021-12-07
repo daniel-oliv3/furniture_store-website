@@ -414,7 +414,16 @@ section {
       color: $white;
     }
   }
+
+  #slide-next {
+    right: 2rem;
+  }
+
+  #slide-prev {
+    left: 2rem;
+  }  
 }
+
 
 .footer {
   background-color: $light-bg;
