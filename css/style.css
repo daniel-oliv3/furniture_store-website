@@ -324,6 +324,7 @@ section {
 }
 .home .slides-container .slide .image img {
   width: 100%;
+  animation: fadeOut 0.4s linear;
 }
 .home #slide-next,
 .home #slide-prev {
