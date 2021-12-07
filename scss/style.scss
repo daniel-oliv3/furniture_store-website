@@ -349,6 +349,20 @@ section {
   }
 }
 
+@keyframes fadeOut {
+  0%{
+    transform: scale(.5);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeLeft {
+  0%{
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+}
+
 .home {
   position: relative;
 
@@ -365,6 +379,7 @@ section {
 
     .content {
       flex: 1 1 40rem;
+      animation: fadeLeft .4s linear .4s backwards;
 
       span {
         font-size: 2.5rem;
@@ -502,6 +517,16 @@ section {
 
   section {
     padding: 3rem 2rem;
+  }
+
+  .home #slide-next,
+  .home #slide-prev {
+    top: 90%;
+  }
+
+  .home #slide-prev {
+    left: auto;
+    right: 8rem;
   }
 }
 

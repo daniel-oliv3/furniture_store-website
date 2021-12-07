@@ -288,6 +288,18 @@ section {
   text-decoration: underline;
 }
 
+@keyframes fadeOut {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+}
 .home {
   position: relative;
 }
@@ -303,6 +315,7 @@ section {
 }
 .home .slides-container .slide .content {
   flex: 1 1 40rem;
+  animation: fadeLeft 0.4s linear 0.4s backwards;
 }
 .home .slides-container .slide .content span {
   font-size: 2.5rem;
@@ -415,6 +428,16 @@ section {
 
   section {
     padding: 3rem 2rem;
+  }
+
+  .home #slide-next,
+.home #slide-prev {
+    top: 90%;
+  }
+
+  .home #slide-prev {
+    left: auto;
+    right: 8rem;
   }
 }
 @media (max-width: 768px) {
