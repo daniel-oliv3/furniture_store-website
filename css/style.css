@@ -325,6 +325,26 @@ section {
 .home .slides-container .slide .image img {
   width: 100%;
 }
+.home #slide-next,
+.home #slide-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid #244d4d;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+.home #slide-next:hover,
+.home #slide-prev:hover {
+  background: #244d4d;
+  color: #fff;
+}
 
 .footer {
   background-color: #f6fbf6;

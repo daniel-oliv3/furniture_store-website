@@ -393,6 +393,27 @@ section {
       }
     }
   }
+
+  #slide-next,
+  #slide-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    box-shadow: $box-shadow;
+    border: $border;
+    text-align: center;
+    background: $white;
+    cursor: pointer;
+
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
 }
 
 .footer {
