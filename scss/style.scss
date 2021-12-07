@@ -349,6 +349,51 @@ section {
   }
 }
 
+.home {
+  position: relative;
+
+  .slides-container .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    .content {
+      flex: 1 1 40rem;
+
+      span {
+        font-size: 2.5rem;
+        color: $light-color;
+      }
+
+      h3 {
+        font-size: 6rem;
+        color: $green;
+        padding-top: .5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: $light-color;
+        padding: .5rem 0;
+        line-height: 2;
+      }
+    }
+
+    .image {
+      flex: 1 1 40rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 
 .footer {
   background-color: $light-bg;

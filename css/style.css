@@ -288,6 +288,44 @@ section {
   text-decoration: underline;
 }
 
+.home {
+  position: relative;
+}
+.home .slides-container .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  display: none;
+}
+.home .slides-container .slide.active {
+  display: flex;
+}
+.home .slides-container .slide .content {
+  flex: 1 1 40rem;
+}
+.home .slides-container .slide .content span {
+  font-size: 2.5rem;
+  color: #779;
+}
+.home .slides-container .slide .content h3 {
+  font-size: 6rem;
+  color: #244d4d;
+  padding-top: 0.5rem;
+}
+.home .slides-container .slide .content p {
+  font-size: 1.5rem;
+  color: #779;
+  padding: 0.5rem 0;
+  line-height: 2;
+}
+.home .slides-container .slide .image {
+  flex: 1 1 40rem;
+}
+.home .slides-container .slide .image img {
+  width: 100%;
+}
+
 .footer {
   background-color: #f6fbf6;
 }
