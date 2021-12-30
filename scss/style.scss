@@ -48,6 +48,59 @@ section {
   padding: 3rem 9%;
 }
 
+.heading {
+  background: $green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  p {
+    color: $white;
+    font-size: 2rem;
+
+    span {
+      color: yellow;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: yellow;
+      }
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  border-bottom: $border;
+  padding-bottom: 1.5rem;
+
+  span {
+    font-size: 2.5rem;
+    color: $green;
+  }
+
+  a {
+    font-size: 1.5em;
+    color: $light-color;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -484,6 +537,29 @@ section {
   }
 
 
+.products .box-container {
+  @include grid(26rem);
+
+  .box {
+    position: relative;
+    background: #f2f2f2;
+    overflow: hidden;
+
+    .image {
+      height: 30rem;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
 .footer {
   background-color: $light-bg;
 
@@ -605,5 +681,10 @@ section {
 
   .home .slides-container .slide .content h3 {
     font-size: 4rem;
+  }
+
+  .heading {
+    flex-flow: column;
+    gap: 1rem;
   }
 }
