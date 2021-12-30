@@ -4,9 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--<link rel="stylesheet" href="scss/style.scss">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" />
 </head>
 <body>
-    
+    <!-- Header Section (seção de cabeçalho) -->
+    <header class="header">
+        <a href="home.html" class="logo"><i class="fas fa-lightbulb"> Furni </i></a>
+        <form action="" class="search-form">
+            <input type="search" placeholder="Procure aqui..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>        
+    </header>
+
+    <!-- Close BTN -->
+    <div id="closer" class="fas fa-times"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html">Inicio</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Sobre</a>
+        <a href="team.html">Time</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contato</a>
+    </nav>
+
+    <!-- Shopping Cart -->
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="imagens/cart-img-1.jpg" alt="">
+            <div class="content">
+                <h3>Móveis Modelo</h3>
+                <span class="quantity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $80.00 </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="imagens/cart-img-2.jpg" alt="">
+            <div class="content">
+                <h3>Móveis Modelo</h3>
+                <span class="quantity"> 2 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $100.00 </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="imagens/cart-img-3.jpg" alt="">
+            <div class="content">
+                <h3>Móveis Modelo</h3>
+                <span class="quantity"> 3 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $130.00 </span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="imagens/cart-img-4.jpg" alt="">
+            <div class="content">
+                <h3>Móveis Modelo</h3>
+                <span class="quantity"> 4 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $120.00 </span>
+            </div>
+        </div>
+
+        <h3 class="total"><span>$560.00</span></h3>
+        <a href="#" class="btn">Carrinho de checkout</a>
+    </div>
+
+
+    <!-- Formulario de Login -->
+    <div class="login-form">
+        <form action="">
+            <h3>Formulário de Login</h3>
+            <input type="email" placeholder="Digite seu e-mail" class="box">
+            <input type="text" placeholder="Digite sua senha" class="box">
+            <div class="remember">
+                <input type="text">
+                <label for=""></label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+            <p>Não tem conta? <a href="#">Crie agora</a></p>
+        </form>
+    </div>
+
+    <!-- Section Heading-->
+    <section class="heading">
+        <h3>Nossa loja</h3>
+        <p><a href="home.html">home</a> / <span>home</span> </p>
+    </section>
+
+    <!-- Footer Section (Seção de rodapé)-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Links Rápidos</h3>
+                <a href="home.html"><i class="fas fa-arrow-right"></i> Inicio</a>
+                <a href="shop.html"><i class="fas fa-arrow-right"></i>Shop</a>
+                <a href="about.html"><i class="fas fa-arrow-right"></i>Sobre</a>
+                <a href="team.html"><i class="fas fa-arrow-right"></i>Time</a>
+                <a href="blog.html"><i class="fas fa-arrow-right"></i>Blog</a>
+                <a href="contact.html"><i class="fas fa-arrow-right"></i>Contato</a>
+            </div>
+
+            <div class="box">
+                <h3>Minha Conta</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Meu pedido</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Minha Lista de Desejos</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Minha Conta</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Meu Favorito</a>
+            </div>
+
+            <div class="box">
+                <h3>Redes Sociais</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+            </div>
+
+            <div class="box">
+                <h3>Boletim de Notícias</h3>
+                <p>Inscreva-se para obter as últimas atualizações</p>
+                <form action="">
+                    <input type="email" name="" placeholder="Digite seu e-mail" id="">
+                    <input type="submit" value="Se Inscrever" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="credit">
+        Criado por Daniel Oliveira | Todos os direitos reservados!
+    </section>
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+<!--
+    Autor: Daniel Oliveira
+    Email: danieloliveira.webmaster@gmail.com
+    Github: https://github.com/daniel-oliv3
+    Ano: 03/12/2021
+-->
