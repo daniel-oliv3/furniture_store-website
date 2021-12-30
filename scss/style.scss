@@ -402,6 +402,7 @@ section {
 
     .image {
       flex: 1 1 40rem;
+      padding: 3rem 0;
 
       img {
         width: 100%;
@@ -521,7 +522,7 @@ section {
 
   .home #slide-next,
   .home #slide-prev {
-    top: 90%;
+    top: 95%;
   }
 
   .home #slide-prev {
@@ -558,5 +559,9 @@ section {
 
   html{
     font-size: 50%;
+  }
+
+  .home .slides-container .slide .content h3 {
+    font-size: 4rem;
   }
 }
