@@ -367,6 +367,43 @@ section {
   left: 2rem;
 }
 
+.banner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.banner-container .banner {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+.banner-container .banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner-container .banner:hover img {
+  transform: scale(1.2);
+}
+.banner-container .banner .content {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
+.banner-container .banner .content span {
+  font-size: 1.7rem;
+  color: #779;
+}
+.banner-container .banner .content h3 {
+  padding-top: 0.5rem;
+  font-size: 2.2rem;
+  color: #244d4d;
+}
+.banner-container .banner .content .btn {
+  padding: 0.7rem 2.5rem;
+}
+
 .footer {
   background-color: #f6fbf6;
 }
