@@ -462,6 +462,28 @@ section {
 .products .box-container .box:hover img {
   transform: scale(1.2);
 }
+.products .box-container .box .icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.products .box-container .box .icons a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  background: #fff;
+  color: #244d4d;
+  font-size: 2rem;
+}
+.products .box-container .box .icons a:hover {
+  background: #244d4d;
+  color: #fff;
+}
 .products .box-container .box .image {
   height: 30rem;
   width: 100%;

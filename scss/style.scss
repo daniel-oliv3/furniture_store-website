@@ -549,6 +549,32 @@ section {
       transform: scale(1.2);
     }
 
+    .icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+
+      a {
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        background: $white;
+        color: $green;
+        font-size: 2rem;
+
+
+        &:hover {
+          background: $green;
+          color: $white;
+        }
+      }
+    }
+
     .image {
       height: 30rem;
       width: 100%;
