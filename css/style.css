@@ -459,6 +459,9 @@ section {
   background: #f2f2f2;
   overflow: hidden;
 }
+.products .box-container .box:hover img {
+  transform: scale(1.2);
+}
 .products .box-container .box .image {
   height: 30rem;
   width: 100%;
@@ -468,6 +471,27 @@ section {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.products .box-container .box .content {
+  padding: 1.5rem 2rem;
+}
+.products .box-container .box .content .price {
+  font-size: 1.7rem;
+  color: #779;
+}
+.products .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #244d4d;
+  padding: 0.5rem 0;
+}
+.products .box-container .box .content .stars {
+  font-size: 1.7rem;
+}
+.products .box-container .box .content .stars i {
+  color: gold;
+}
+.products .box-container .box .content .stars span {
+  color: #779;
 }
 
 .footer {

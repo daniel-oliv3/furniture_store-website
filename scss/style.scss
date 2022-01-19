@@ -545,6 +545,10 @@ section {
     background: #f2f2f2;
     overflow: hidden;
 
+    &:hover img {
+      transform: scale(1.2);
+    }
+
     .image {
       height: 30rem;
       width: 100%;
@@ -554,6 +558,33 @@ section {
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+    }
+
+  .content {
+    padding: 1.5rem 2rem;
+
+    .price {
+      font-size: 1.7rem;
+      color: $light-color;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $green;
+      padding: .5rem 0;
+    }
+
+    .stars {
+      font-size: 1.7rem;
+
+      i {
+        color: gold;
+      }
+
+      span {
+        color: $light-color;
+        }
       }
     }
   }
